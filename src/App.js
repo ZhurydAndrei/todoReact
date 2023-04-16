@@ -1,39 +1,14 @@
-import React, {useState} from "react"
-import './styles/App.css'
-import PostList from './components/PostList'
-import MyButton from "./components/UI/button/MyButton"
-import MyInput from "./components/UI/input/MyInput"
-import PostForm from "./components/PostForm"
+import React from 'react'
+import './styles/index.scss'
 
-function App() {
-  const [posts, setPosts] = useState([
-    {id: 1, title: 'JavaScript', body: 'Description'},
-    {id: 2, title: 'JavaScript', body: 'Description'},
-    {id: 3, title: 'JavaScript', body: 'Description'},
-  ])
+import Header from './components/Header/Header'
+import Main from "./components/Main/Main"
 
-  const createPost = newPost => {
-    setPosts([...posts, newPost])
-  }
-
-  const removePost = post => {
-    console.log(post)
-    setPosts(posts.filter(p => p.id !== post.id))
-  }
-
+const App = () => {
   return (
-    <div className="App">
-      <PostForm create={createPost}/>
-      {
-        posts.length
-      ?  <PostList
-            posts={posts}
-            removePost={removePost}
-            title="Посты про JS"
-          />
-      : <h2>Постов нет</h2>
-      }
-
+    <div className="app">
+      <Header />
+      <Main />
     </div>
   )
 }

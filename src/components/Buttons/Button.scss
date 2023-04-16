@@ -1,0 +1,19 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  font-size: 15px;
+  border: 2px solid teal;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  color: teal;
+  transition: 0.2s ease-out;
+}
+
+.button:hover {
+  background-color: lighten(teal, 10%);
+  color: #FFF;
+}
