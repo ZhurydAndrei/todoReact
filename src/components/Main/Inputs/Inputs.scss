@@ -1,12 +1,13 @@
 .main {
   &__inputs {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   &__input {
-    width: 800px;
+    width: 100%;
     height: 40px;
     border: 1px solid teal;
     font-size: 25px;
