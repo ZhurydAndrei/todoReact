@@ -1,9 +1,9 @@
 import React from 'react'
 import './Main.scss'
 
-import Input from "./Inputs/Input"
+import Input from "../Inputs/Input"
 import {AddButton} from "../Buttons/Button"
-import Card from "./Card/Card"
+import Cards from "../Content/Cards/Cards"
 
 
 const Main = () => {
@@ -18,7 +18,7 @@ const Main = () => {
         </AddButton>
 
       </div>
-        <Card />
+        <Cards />
     </div>
   )
 }
